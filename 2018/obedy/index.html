@@ -1,0 +1,436 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>reveal.js</title>
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/black.css">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h4>Automatizace objednávání obědů s Pythonem</h4>
+      </section>
+      <section>
+        <h4>Automatizace</h4>
+        <span class="fragment">"Samočinná technologie provádějící opakovaně proces s minimální lidskou asistencí."</span>
+      </section>
+      <section>
+        <section>
+            <p>Proces:</p>
+            <p class="fragment">manuální objednávání obědů</p>
+            <ul style="font-size: 0.8em;">
+              <li class="fragment">výběr restaurace</li>
+              <li class="fragment">výběr jídla</li>
+              <li class="fragment">odeslání rezervačního e-mailu</li>
+              <li class="fragment">5-10 minut zabitých každý den</li>
+            </ul>
+        </section>
+        <section>
+            <img src="img/xkcd.png" />
+            <p class="fragment">Řešení:</p>
+            <p class="fragment"><b>Python!</b></p>
+        </section>
+      </section>
+      <section>
+        <p>Plán:</p>
+        <ol>
+          <li class="fragment">Získat denní menu restaurací ve strojově čitelné formě</li>
+          <li class="fragment">Nabídnout volbu jídla ve webové aplikaci</li>
+          <li class="fragment">Automaticky vygenerovat a odeslat e-mail do restaurace</li>
+        </ol>
+      </section>
+
+      <!-- Jack -->
+      <section>
+        <h3>Jack's Burger Bar v Porubě</h3>
+        <img src="img/jack.jpg" class="stretch" /><br />
+        <span style="font-size: 0.5em;">Zdroj: http://www.jacksburgerbar.cz/poruba/galerie/</span>
+      </section>
+      <section>
+        <div style="position: absolute; top: 0; left: 0">Jack</div>
+        <div style="margin-top: 100px">
+          <h4>Zdroj dat: <br />Zomato API ☺</h4>
+          <ul>
+            <li class="fragment">databáze restaurací a denních nabídek jídel</li>
+            <li class="fragment">zdarma 1000 API volání denně</li><br />
+          </ul>
+          <h4 class="fragment">Použité knihovny:</h4>
+          <ul>
+            <li class="fragment">requests (komunikace s REST API)</li>
+            <li class="fragment">re (zpracování textu pomocí regulárních výrazů)</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div style="position: absolute; top: 0; left: 0">Jack</div>
+        <div style="margin-top: 100px">Jak to vypadá v Pythonu?</div>
+        <pre><code class="python" data-trim data-noescape>
+<span class="fragment">import requests</span>
+<span class="fragment">url = "https://developers.zomato.com/api/v2.1/dailymenu"</span>
+<span class="fragment">data = requests.<b>get</b>(url,</span>
+	<span class="fragment">params={"res_id": restaurant},</span>
+	<span class="fragment">headers={"user_key": ZOMATO_API_KEY}</span>
+<span class="fragment">).json()</span>
+</code></pre>
+        <div class="fragment">⇩
+          <pre><code class="javascript" data-trim style="font-size: 0.8em;">
+								[{'name': 'Čočka na kyselo s pečenou cibulkou, 2 ks vejce, chléb', 'price': '99 Kč'},
+								{'name': 'Kuřecí plátky v domácím bramboráku, salát Coleslaw', 'price': '99 Kč'},
+								{'name': 'Losos s bazalkovou omáčkou, penne', 'price': '119 Kč'}]
+						</code></pre>
+        </div>
+      </section>
+
+      <!-- Menza -->
+      <section>
+        <h3>Menza č. 5 (VŠB-TUO)</h3>
+        <img src="img/menza.jpeg" class="stretch" /><br />
+        <span style="font-size: 0.5em;">Zdroj: https://menza.vsb.cz/</span>
+      </section>
+      <section>
+        <div style="position: absolute; top: 0; left: 0">Menza</div>
+        <div style="margin-top: 100px">
+          <h4>Zdroj dat: <br />HTML tabulka na webu menzy ☹</h4>
+          <pre class="fragment"><code class="html" data-trim style="font-size: 0.8em;">
+&lt;tr class=&quot;Jidlo&quot;&gt;
+  &lt;td id=&quot;Id&quot;&gt;5&lt;/td&gt;
+  &lt;td id=&quot;Fotka&quot;&gt;&lt;img src=&quot;./ImageFromDb.aspx?ImgID=775633&quot; /&gt;&lt;/td&gt;
+  &lt;td id=&quot;Nazev&quot;&gt;1/2 pečen&eacute; kuře, chl&eacute;b, okurek, zeleninov&aacute; obloha&lt;/td&gt;
+  &lt;td id=&quot;PocetKusu&quot;&gt;8&lt;/td&gt;
+  &lt;td id=&quot;Cena&quot;&gt;81,00&lt;/td&gt;
+&lt;/tr&gt;</code></pre>
+          <h4 class="fragment">Použité knihovny:</h4>
+          <ul>
+            <li class="fragment">mechanicalsoup (automatizace browseru)</li>
+            <li class="fragment">re (zpracování textu pomocí regulárních výrazů)</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div style="position: absolute; top: 0; left: 0">Menza</div>
+        <div style="margin-top: 100px">Jak to vypadá v Pythonu?</div>
+        <pre><code class="python" data-trim data-noescape>
+<span class="fragment">import mechanicalsoup</span>
+<span class="fragment">browser = mechanicalsoup.StatefulBrowser()</span>
+<span class="fragment">browser.open("{}/{}".format(MENZA_URL, "ZalozkaObjednavani.aspx"))</span>
+<span class="fragment">page = browser.get_current_page()</span>
+<span class="fragment">table = page.find_all("table")</span>
+<span class="fragment">rows = table.find_all("tr")</span>
+</code></pre>
+        <div class="fragment">
+          Vyhledání obrázku v řádku tabulky
+          <pre><code class="python" data-trim>
+                def find_image(row):
+                  col = row.find(class_="Fotka")  # hledání elementů s class="Fotka"
+                  if col and col.contents:
+                    link = col.find("img")        # hledání obrázku
+                    if link and "onclick" in link.attrs:
+                      match = re.search("ImgID=(\d+)", link["onclick"])
+                      if match:
+                        return match.group(1)
+            </code></pre>
+        </div>
+      </section>
+
+      <!-- Kovork -->
+      <section>
+        <h3>Kovork</h3>
+        <img src="img/kovork.jpg" class="stretch" /><br />
+        <span style="font-size: 0.5em;">Zdroj: https://cpi.vsb.cz/cs/sluzby/pronajmy-a-inkubator/kovork/</span>
+      </section>
+      <section>
+        <div style="position: absolute; top: 0; left: 0">Kovork</div>
+        <div style="margin-top: 100px">
+          <h4>Zdroj dat: <br />
+            <span class="fragment">Ručně formátovaný text</span>
+            <span class="fragment">ve Wordu 2003</span><br />
+            <span class="fragment">odesílaný jako příloha e-mailu</span>
+            <span class="fragment">(ノಠ益ಠ)ノ彡┻━┻</span>
+          </h4>
+
+          <div style="display: flex; align-items: center;">
+            <img class="fragment" src="img/kovork-email.png" width=500 height=180 />
+            <span class="fragment">⇨</span>
+            <img class="fragment" src="img/kovork-menu.png" height=300 />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div style="position: absolute; top: 0; left: 0">Kovork</div>
+        <div style="margin-top: 100px">
+          <h4>Použité knihovny:</h4>
+          <ul>
+            <li class="fragment">google-api-python-client (čtení a odesílání e-mailů)</li>
+            <li class="fragment">python-docx (získání textu z DOCu)</li>
+            <li class="fragment">re (zpracování textu pomocí regulárních výrazů)</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div style="position: absolute; top: 0; left: 0">Kovork</div>
+        <div style="margin-top: 100px">Načtení wordu z Gmailu</div>
+        <pre><code class="python" data-trim data-noescape>
+  <span class="fragment">inbox = gmail.list(userId='me',</span>
+      <span class="fragment">q='from:kavarna.kovork@seznam.cz after:1539248619')</span>
+  <span class="fragment">for msg in inbox['messages']:</span>
+    <span class="fragment">email = gmail.get(userId='me', id=msg['id'])</span>
+    <span class="fragment">subject = email['headers']['subject']</span>
+    <span class="fragment">if 'menu' in subject.lower():</span>
+      <span class="fragment">word = email['attachments'][0]</span>
+  </code></pre>
+      </section>
+      <section>
+        <div style="position: absolute; top: 0; left: 0">Kovork</div>
+        <div style="margin-top: 100px">Získání textu z DOCu</div>
+        <pre><code class="python" data-trim data-noescape>
+<span class="strikethrough"><span class="fragment">from docx import Document</span>
+<span class="fragment">document = Document(word)</span>
+<span class="fragment">menu = document.paragraphs[0].text</span>
+</span>
+              <span class="fragment" data-state="strikethrough">python-docx nepodporuje Word 2003 ☹
+              </span>
+              <span class="fragment">Řešení:</span>
+              <ul><li class="fragment">www.convertapi.com</li><li class="fragment">requests (konverze DOC na PDF)</li><li class="fragment">pdfminer (konverze PDF na text)</li></ul>
+    </code></pre>
+      </section>
+      <section>
+          <div style="position: absolute; top: 0; left: 0">Kovork</div>
+          <div style="margin-top: 100px">Konverze DOC na PDF</div>
+          <pre><code class="python" data-trim data-noescape>
+    <span class="fragment">data = requests.<b>post</b>('https://v2.convertapi.com/convert/doc/to/pdf',</span>
+              <span class="fragment">params={'SECRET': CONVERT_API_SECRET},</span>
+              <span class="fragment">json=word)</span>
+    <span class="fragment">pdf = base64.b64decode(data)</span>
+      </code></pre>
+      <div>Extrakce textu z PDF</div>
+          <pre><code class="python" data-trim data-noescape>
+    <span class="fragment">from pdfminer import TextConverter, PDFPageInterpreter, PDFPage</span>
+    <span class="fragment">interpreter = PDFPageInterpreter(TextConverter('utf-8'))</span>
+    <span class="fragment">page = PDFPage.get_pages(pdf)[0]</span>
+    <span class="fragment">text = interpreter.process_page(page).getvalue()</span>
+      </code></pre>
+        </section>
+        <section>
+            <div style="position: absolute; top: 0; left: 0">Kovork</div>
+            <section>
+            <div style="margin-top: 100px">Extrakce dat z formátovaného textu</div>
+            <pre><code class="python" data-trim data-noescape>
+      <span class="fragment">import re</span>
+      <span class="fragment">regex = re.compile(</span><span class="fragment">"^(\d)\)\s*(.*?)\s*(\d+),-",</span>
+          <span class="fragment">re.DOTALL | re.MULTILINE)</span>
+            </code></pre>
+          <pre class="fragment"><code class="python" data-trim data-noescape>
+              "1)HOVĚZÍ HAMBURGER (150g) SE ZELENINOU
+              A BBQ OMÁČKOU PODÁVANÝ S HRANOLKAMI
+              129,- (1,3,7)"
+          </code></pre>
+          <div class="fragment">⇩<pre><code class="python" data-trim data-noescape>
+                {
+                  "id": 1,
+                  "food": "HOVĚZÍ HAMBURGER (150g) SE ZELENINOU A BBQ
+                          OMÁČKOU PODÁVANÝ S HRANOLKAMI",
+                  "price": 129
+                }
+              </code></pre>
+          </div>
+         </section>
+         <section>
+            <pre><code class="bash fragment step-fade-in-then-out" data-fragment-index="0" data-trim data-noescape>
+                1) Vepřo knedlo zelo 115,-
+            </code></pre>
+            <pre><code class="bash fragment step-fade-in-then-out" data-fragment-index="1" data-trim data-noescape>
+                <span class="red">1</span>) Vepřo knedlo zelo 115,-
+            </code></pre>
+            <pre><code class="bash fragment step-fade-in-then-out" data-fragment-index="2" data-trim data-noescape>
+                1<span class="red">)</span> Vepřo knedlo zelo 115,-
+            </code></pre>
+            <pre><code class="bash fragment step-fade-in-then-out" data-fragment-index="3" data-trim data-noescape>
+                1)<span class="red">_</span>Vepřo knedlo zelo 115,-
+            </code></pre>
+            <pre><code class="bash fragment step-fade-in-then-out" data-fragment-index="4" data-trim data-noescape>
+                1) <span class="red">Vepřo knedlo zelo</span> 115,-
+            </code></pre>
+            <pre><code class="bash fragment step-fade-in-then-out" data-fragment-index="5" data-trim data-noescape>
+                1) Vepřo knedlo zelo<span class="red">_</span>115,-
+            </code></pre>
+            <pre><code class="bash fragment step-fade-in-then-out" data-fragment-index="6" data-trim data-noescape>
+                1) Vepřo knedlo zelo <span class="red">115</span>,-
+            </code></pre>
+            <pre><code class="bash fragment step-fade-in-then-out" data-fragment-index="7" data-trim data-noescape>
+                1) Vepřo knedlo zelo 115<span class="red">,-</span>
+            </code></pre>
+            <pre><code class="python fragment step-fade-in-then-out" data-fragment-index="0" data-trim data-noescape>
+                <span class="red">^</span>(\d)\)\s*(.*?)\s*(\d+),-
+            </code></pre>
+            <pre><code class="python fragment step-fade-in-then-out" data-fragment-index="1" data-trim data-noescape>
+                ^<span class="red">(\d)</span>\)\s*(.*?)\s*(\d+),-
+            </code></pre>
+            <pre><code class="python fragment step-fade-in-then-out" data-fragment-index="2" data-trim data-noescape>
+                ^(\d)<span class="red">\)</span>\s*(.*?)\s*(\d+),-
+            </code></pre>
+            <pre><code class="python fragment step-fade-in-then-out" data-fragment-index="3" data-trim data-noescape>
+                ^(\d)\)<span class="red">\s*</span>(.*?)\s*(\d+),-
+            </code></pre>
+            <pre><code class="python fragment step-fade-in-then-out" data-fragment-index="4" data-trim data-noescape>
+                ^(\d)\)\s*<span class="red">(.*?)</span>\s*(\d+),-
+            </code></pre>
+            <pre><code class="python fragment step-fade-in-then-out" data-fragment-index="5" data-trim data-noescape>
+                ^(\d)\)\s*(.*?)<span class="red">\s*</span>(\d+),-
+            </code></pre>
+            <pre><code class="python fragment step-fade-in-then-out" data-fragment-index="6" data-trim data-noescape>
+                ^(\d)\)\s*(.*?)\s*<span class="red">(\d+)</span>,-
+            </code></pre>
+            <pre><code class="python fragment step-fade-in-then-out" data-fragment-index="7" data-trim data-noescape>
+                ^(\d)\)\s*(.*?)\s*(\d+)<span class="red">,-</span>
+            </code></pre>
+            <pre><code class="python" data-trim data-noescape>
+                <span class="fragment" data-fragment-index="0">^      začni testovat výraz na začátku řádku</span>
+                <span class="fragment" data-fragment-index="1">(\d)   zaznamenej číslici (ID jídla)</span>
+                <span class="fragment" data-fragment-index="2">\)     následovanou znakem konce závorky ')'</span>
+                <span class="fragment" data-fragment-index="3">\s*    ignoruj mezery</span>
+                <span class="fragment" data-fragment-index="4">(.*?)  zaznamenej cokoliv, co najdeš (název jídla)</span>
+                <span class="fragment" data-fragment-index="5">\s*    ignoruj mezery</span>
+                <span class="fragment" data-fragment-index="6">(\d+)  zaznamenej sekvenci číslic (cena)</span>
+                <span class="fragment" data-fragment-index="7">,-     následovanou znaky ',-'</span>
+            </code></pre>
+         </section>
+      </section>
+      <section>
+        Web pro objednávání<br /><br />
+
+        <div class="fragment">Knihovny:</div>
+        <ul>
+          <li class="fragment">flask (web, REST API)</li>
+          <li class="fragment">jinja2 (šablony pro web)</li>
+          <li class="fragment">flask_sqlalchemy (databáze)</li>
+        </ul>
+      </section>
+      <section>
+        Hello world stránka ve Flasku
+        <pre><code class="python" data-trim data-noescape>
+          <span class="fragment" data-fragment-index="1">from flask import Flask</span>
+          <span class="fragment" data-fragment-index="2">app = Flask("Obedy")</span>
+
+          <span class="fragment" data-fragment-index="3">@app.route("/")</span>
+          <span class="fragment" data-fragment-index="0">def hello():
+            return "Hello World!"</span>
+        </code></pre>
+      </section>
+      <section>
+        <section>
+          Render jinja šablony ve Flasku
+          <pre><code class="python" data-trim data-noescape>
+            @app.route("/")
+            def hello():
+              return render_template("index.html",
+                                     todos=["Vytvořit prezentaci",
+                                            "Naučit se Python"])
+          </code></pre>
+          <div class="fragment">
+            index.html
+            <pre><code class="jinja" data-trim>
+              <ul>
+                {% for todo in todos %}
+                  <li>{{ todo }}</li>
+                {% endfor %}
+              </ul>
+            </code></pre>
+          </div>
+        </section>
+        <section>
+          Šablona e-mailu odesílaného do Kovorku
+          <pre><code class="jinja" data-trim>
+              Dobrý den,
+    
+              {{ "chtěl" if user.sex == "m" else "chtěla" }}
+              bych si objednat tyto obědy:
+              
+              {% for lunch in lunches %}
+                Oběd {{ lunch['name'] }}) - {{ lunch['count'] }}x
+              {% endfor %}
+              
+              S pozdravem,
+              {{ user.name }}
+          </code></pre>
+        </section>
+      </section>
+      <section>
+        Uložení menu do databáze (SQLAlchemy)
+        <pre><code class="python" data-trim data-noescape>
+          class Menu(db.Model):
+            <span class="fragment">id = db.Column(db.Integer, primary_key=True)</span>
+            <span class="fragment">restaurant = db.Column(db.String(80))</span>
+            <span class="fragment">items = db.Column(db.Text)</span>
+            <span class="fragment">date = db.Column(db.DATE)</span>
+
+          <span class="fragment">menu = Menu(restaurant="kovork", items="...", date=datetime.today())</span>
+          <span class="fragment">db.session.add(menu)</span>
+          <span class="fragment">db.session.commit()</span>
+        </code></pre>
+      </section>
+      <section>
+          Výsledná aplikace
+          <img src="img/obedy-screen.png" />
+          Nasazeno na heroku.com
+      </section>
+      <section>
+        <h4>Zbývající automatizace</h4>
+        <ul>
+          <li class="fragment">cron - každý den v 10:30 se automaticky odešle e-mail</li>
+          <li class="fragment">Slack - objednávání přes Slack příkazy</li>
+        </ul>
+        <img class="fragment" src="img/slack.png" />
+      </section>
+      <section>
+        https://github.com/kobzol/obedy<br /><br />
+        <h4 class="fragment">Díky za pozornost</h4>
+      </section>
+    </div>
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      width: 1080,
+      height: 780,
+      dependencies: [
+        { src: 'plugin/markdown/marked.js' },
+        { src: 'plugin/markdown/markdown.js' },
+        { src: 'plugin/notes/notes.js', async: true },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+      ]
+    });
+    Reveal.addEventListener("fragmentshown", function (event) {
+      var span = event.fragment;
+      // debugger;
+      if (span.dataset.state === "strikethrough") {
+        var strike = span.parentNode.querySelector(".strikethrough");
+        strike.style.textDecoration = "line-through";
+      }
+    });
+  </script>
+</body>
+</html>
