@@ -20,4 +20,4 @@ This repository contains the source code and slides for some of my public talks.
 ## 2018
 - **How to use Python to order lunches**
   - Presented at a local community Python meetup [PyVo](https://pyvo.cz/ostrava-pyvo/2018-11/)
-  - [Slides](2018/obedy/slides.pdf)
+  - [Slides](2018/obedy/slides.pdf) (Czech)
