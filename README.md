@@ -4,7 +4,7 @@ This repository contains the source code and slides for some of my public talks.
 ## 2023
 - **What can Rust offer you?**
   - Presented at [TechMeetup](https://techmeetup.cz) 2023.
-  - [Slides](2023/rust/slides.pdf)
+  - [Slides](2023/techmeetup-rust/slides.pdf)
 
 ## 2019
 - **CPU design effects that can degrade performance of your programs**
