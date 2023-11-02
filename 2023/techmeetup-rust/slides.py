@@ -73,7 +73,7 @@ def whoami(slide: Box):
 
     left.box(x=0, p_bottom=sh(40)).text("Kuba Beránek", T(align="left", size=50, bold=True))
     lst = unordered_list(left.box(x=0))
-    dimmed_list_item(lst, "PhD student @ VSB-TUO", show=2)
+    dimmed_list_item(lst, "PhD student, teacher @ VSB-TUO", show=2)
     dimmed_list_item(lst, "Researcher @ IT4Innovations", show=3)
     dimmed_list_item(lst, "HPC, distributed systems, code optimization,\nmachine learning,…",
                      show=4)
@@ -91,7 +91,11 @@ def teams(slide: Box):
     # Link: https://www.rust-lang.org/governance/teams/compiler#Compiler%20performance%20working%20group
     # Link: https://www.rust-lang.org/governance/teams/compiler#Binary%20size%20working%20group
     # Link: https://www.rust-lang.org/governance/teams/compiler#Parallel%20rustc%20working%20group
-    for (index, image) in enumerate(("wg-parallel-rustc", "wg-binary-size", "team-infra")):
+    for (index, image) in enumerate((
+            # "wg-parallel-rustc",
+            # "wg-binary-size",
+            "team-infra",
+    )):
         content.box(
             show="next+",
             x=reference.x("0").add(offset * (index + 1)),
@@ -354,13 +358,13 @@ def meetup(slide: Box):
 def outro(slide: Box):
     slide.box(p_bottom=sh(40)).text("Děkuji za pozornost", style=T(size=70, bold=True))
 
-    slide.box().text("Slide jsou dostupné zde:")
+    slide.box().text("Slidy jsou dostupné zde:")
     qr = generate_qr_code("https://github.com/kobzol/talks/blob/main/2023/techmeetup-rust/",
                           scale=14)
     slide.box().image(qr, image_type="png")
 
-    slide.box(p_top=sh(20)).text("Slidy byly vytvořeny pomocí ~tt{github.com/spirali/elsie}",
-                                 style=T(size=40))
+    slide.box().text("Slidy byly vytvořeny pomocí ~tt{github.com/spirali/elsie}",
+                     style=T(size=40))
 
 
 def ferris(slides: SlideDeck):
@@ -417,7 +421,7 @@ if PRODUCTION_BUILD:
     ferris(slides)
     print_stats(slides, minutes=40)
 
-if PRODUCTION_BUILD:
-    slides.render("slides.pdf", slide_postprocessing=page_numbering)
-else:
-    slides.render("slides.pdf")
+# if PRODUCTION_BUILD:
+#     slides.render("slides.pdf", slide_postprocessing=page_numbering)
+# else:
+slides.render("slides.pdf")

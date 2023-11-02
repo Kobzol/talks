@@ -1,17 +1,44 @@
-from elsie import SlideDeck, TextStyle as T
+from elsie import Arrow, SlideDeck, TextStyle as T
 from elsie.boxtree.box import Box
 from elsie.ext import unordered_list
 
 from config import sh, sw
-from utils import CODE_HIGHLIGHT_COLOR, LOWER_OPACITY, code, code_step, dimmed_list_item, quotation
+from utils import CODE_HIGHLIGHT_COLOR, COLOR_ORANGE, LOWER_OPACITY, code, code_step, \
+    dimmed_list_item, quotation
 
 
 def cpp_alias_mutate(slides: SlideDeck):
     @slides.slide()
     def insight(slide: Box):
+        slide.set_style("aliasing", T(color="#43BF47"))
+        slide.set_style("mutability", T(color=COLOR_ORANGE))
+
         content = slide.box()
-        content.box().text("""Memory errors arise when
-aliasing is combined with mutability""")
+        box = content.box(width=sw(1400))
+        text_box = box.box(show="1-2").text("""Memory errors happen when
+~aliasing{aliasing} is combined with ~mutability{mutability}""")
+
+        stroke_width = 12
+        arrow = Arrow(size=24)
+        aliasing = text_box.inline_box("aliasing")
+        aliasing_wrapper = content.box(show="2+")
+        aliasing_wrapper.line([(
+            aliasing.x("0").add(-sw(100)),
+            aliasing.y("100%").add(sh(100)),
+        ), (
+            aliasing.x("0"),
+            aliasing.y("100%"),
+        )], end_arrow=arrow, color="#1A2DB3", stroke_width=stroke_width)
+        aliasing_wrapper.line([(
+            aliasing.x("90%"),
+            aliasing.y("100%").add(sh(150)),
+        ), (
+            aliasing.x("50%"),
+            aliasing.y("100%"),
+        )], end_arrow=arrow, color="#F85C70", stroke_width=stroke_width)
+
+        box.overlay(show="3").text("""Memory errors happen when
+~aliasing{aliasing} is combined with ~mutability{mUtABil1ty}""")
 
     @slides.slide()
     def cpp_vec_ub(slide: Box):
@@ -19,6 +46,7 @@ aliasing is combined with mutability""")
         slide.set_style("gray", slide.get_style("code").compose(T(color="#BBBBBB")))
 
         content = slide.box()
+        content.box(p_bottom=sh(40)).text("C++ memory error example")
 
         style_green = T(size=50, color="green")
         style_red = T(size=style_green.size, color="red")
@@ -75,19 +103,13 @@ def reliability(slides: SlideDeck):
     @slides.slide()
     def safety(slide: Box):
         content = slide.box()
-        content.box().text("(Memory) Safety", T(size=80))
-
-    @slides.slide()
-    def safety_in_the_wild(slide: Box):
-        slide.overlay().box(width=sw(1500), show="1").image("images/microsoft-safety.png")
-        slide.overlay().box(width=sw(1500), show="next").image("images/chrome-safety.png")
-        slide.overlay().box(width=sw(1200), show="next").image("images/android-safety.png")
-        slide.overlay().box(width=sw(1500), show="next").image("images/nsa-safety.png")
+        content.box(p_bottom=sh(40)).text("(Memory) Safety", T(size=80))
+        content.box().text("Absence of memory errors")
 
     @slides.slide()
     def undefined_behavior(slide: Box):
         content = slide.box()
-        content.box(p_bottom=sh(40)).text("Caused by undefined behaviour (UB)")
+        content.box(p_bottom=sh(40)).text("Memory errors")
         list = unordered_list(content.box(show="next+"))
         items = [
             "Null pointer dereference",
@@ -95,14 +117,24 @@ def reliability(slides: SlideDeck):
             "Use-after-free",
             "Out-of-bounds access",
             "Iterator invalidation",
-            "…"
         ]
-        for item in items:
-            list.item().text(item)
+        for (index, item) in enumerate(items):
+            dimmed_list_item(list, item, show=index + 2)
+        list.item().text("…")
 
+        content.box(p_top=sh(40), show="next+").text("Caused by undefined behaviour (UB)")
         content.box(p_top=sh(40), show="next").text("Rust: avoid UB at all costs")
 
     cpp_alias_mutate(slides)
+
+    @slides.slide()
+    def safety_in_the_wild(slide: Box):
+        slide.overlay().box(width=sw(1500), show="1").image("images/microsoft-safety.png")
+        slide.overlay().box(width=sw(1500), show="next").image("images/chrome-safety.png")
+        android = slide.overlay()
+        android.box(show="3").text("Android")
+        android.box(width=sw(1200), show="last").image("images/android-safety.png")
+        slide.overlay().box(width=sw(1500), show="next").image("images/nsa-safety.png")
 
     @slides.slide()
     def rewrites(slide: Box):
@@ -149,8 +181,8 @@ for item in items.iter() {
     @slides.slide()
     def correctness(slide: Box):
         content = slide.box()
-        content.box(p_bottom=sh(80)).text("Correctness", T(size=80))
-        content.box().text("Design APIs that cannot be misused")
+        content.box(p_bottom=sh(80)).text("Soundness", T(size=80))
+        content.box().text("API that cannot be misused")
 
     @slides.slide()
     def ownership(slide: Box):
@@ -158,8 +190,9 @@ for item in items.iter() {
         content = slide.box(width="fill")
         content.box(p_bottom=sh(40)).text("Ownership")
         code_step(content.box(width="fill", height=sh(200)), """file.close();
-let data = file.read();""", show_start=1, line_steps=[[0], [0, 1]], width=sw(1000))
-        slide.box(show="3", p_top=sh(40), width=sw(1800)).image(
+…
+let data = file.read();""", show_start=1, line_steps=[[0], [0, 1, 2]], width=sw(1000))
+        slide.box(show="3", p_top=sh(50), width=sw(1800)).image(
             "images/error-message-file-ownership.png")
 
     @slides.slide()
@@ -231,9 +264,9 @@ fn max(items: &[u32]) -> Option<usize>
 
         box = row.box()
         code(box.fbox(show="next"), """
-match opt_value {
+match max(items) {
     Some(value) => ...,
-    None => println!("Value is missing")
+    None => println!("No maximum found")
 }
 """, code_style="code-small", width=sw(1250))
 
@@ -252,7 +285,8 @@ match opt_value {
 match read_file("src.txt") {
     Ok(content) => write_file("dst.txt", content),
     Err(Error::PermissionDenied) => eprintln!("Permission denied"),
-    Err(Error::NotFound) => eprintln!("File not found")
+    Err(Error::NotFound) => eprintln!("File not found"),
+    Err(e) => eprintln!("Unknown error has occurred: {e:?}")
 }
 """
 
@@ -267,6 +301,10 @@ write_file("dst.txt", content)?;
 """, use_styles=True)
 
     @slides.slide()
+    def fearless_concurrency(slide: Box):
+        slide.box().text("Fearless concurrency", T(size=80))
+
+    @slides.slide()
     def mutex(slide: Box):
         slide.update_style("code", T(size=50))
 
@@ -274,7 +312,7 @@ write_file("dst.txt", content)?;
         content.box(p_bottom=sh(40)).text("Safe(r) mutexes")
         code_step(content.box(width="fill"), """let value = Mutex::new(vec![1, 2]);
 value.lock().push(3);
-""", show_start=1, line_steps=[[0], [0, 1]], width=sw(1000))
+""", show_start=1, line_steps=[[0], [0, 1]], width=sw(1350))
 
     @slides.slide()
     def fearless_concurrency(slide: Box):

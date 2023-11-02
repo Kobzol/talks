@@ -80,6 +80,7 @@ def timeline(slides: SlideDeck):
         box.box(width=sw(1400)).image("images/rust-edition-2018.png")
         box.overlay(show="next").box(width=sw(1600)).image("images/aws-firecracker.png")
         box.overlay(show="next").box(width=sw(1400)).image("images/rust-cloudflare.png")
+        # Typescript
         box.overlay(show="next+").box(width=sw(1400)).image("images/rust-figma.png")
         box.overlay(show="next").box(width=sw(1400)).image("images/figma-perf.png")
 

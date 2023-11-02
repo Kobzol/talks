@@ -85,14 +85,15 @@ fn sum_of_squares(input: &[i32]) -> i32 {
         slide.overlay(show="next").box(width=sw(1400)).image("images/tenable-memory.png")
         quotation(slide.overlay(show="next").box(), """With this small change, we were able
 to optimize away over 700 CPU and 300GB of memory.
-This was all implemented, tested and deployed in two weeks.""", "Tenable")
+~bold{This was all implemented, tested and deployed in two weeks.}""", "Tenable")
 
     @slides.slide()
     def tilde(slide: Box):
+        # Ruby, C++
         slide.overlay().box(width=sw(1600)).image("images/rust-tilde.png")
         slide.overlay(show="next+").box(width=sw(1400)).image("images/tilde-memory.png")
-        quotation(slide.overlay(show="next").box(), """After rewriting of the agent in Rust,
-the agent consistently used 8 MB: 92% smaller!""", "Tilde")
+        # quotation(slide.overlay(show="next").box(), """After rewriting of the agent in Rust,
+# the agent consistently used 8 MB: 92% smaller!""", "Tilde")
 
     @slides.slide()
     def discord(slide: Box):
@@ -135,7 +136,7 @@ the agent consistently used 8 MB: 92% smaller!""", "Tilde")
 
         seaborn_palette = sns.color_palette()
         palette = [seaborn_palette[0], seaborn_palette[3], seaborn_palette[1]]
-        palette = palette[:len(data["language"].unique())]
+        palette = ["white"] + palette[:len(data["language"].unique()) - 1]
 
         plt.clf()
         params = {"legend.handlelength": 4, "legend.handleheight": 4}
@@ -145,7 +146,7 @@ the agent consistently used 8 MB: 92% smaller!""", "Tilde")
             plt.figure(figsize=(sw(1800) * px, sh(900) * px))
 
             ax = sns.lineplot(data, x="time", y="perf", hue="language", palette=palette,
-                              linewidth=5)
+                                  linewidth=5)
             ax.set(xticks=[], yticks=[])
             fontsize = 40
             ax.set_xlabel("Time", fontsize=fontsize)
@@ -174,12 +175,17 @@ the agent consistently used 8 MB: 92% smaller!""", "Tilde")
         python_data = make_data("Python", [1, 3.2, 5, 6, 6.5, 7, 7.2, 7.3, 7.4, 7.5])
         cpp_data = make_data("C++", [1, 2, 4, 6, 7.5, 9, 10.5, 11, 11.4, 11.8])
         rust_data = make_data("Rust", [1, 5, 6.5, 7.5, 9, 10.5, 11, 11.2, 11.3, 11.4])
+        empty_data = python_data.copy()
+        empty_data["language"] = " "
 
-        plot1 = render_plot(python_data)
-        chart_box.box().image(plot1, image_type="png")
+        plot0 = render_plot(empty_data)
+        chart_box.box(width=sw(1600)).image(plot0, image_type="png")
 
-        plot2 = render_plot(pd.concat((python_data, cpp_data)))
+        plot1 = render_plot(pd.concat((empty_data, python_data)))
+        chart_box.overlay(show="next+").image(plot1, image_type="png")
+
+        plot2 = render_plot(pd.concat((empty_data, python_data, cpp_data)))
         chart_box.overlay(show="next+").image(plot2, image_type="png")
 
-        plot3 = render_plot(pd.concat((python_data, cpp_data, rust_data)))
+        plot3 = render_plot(pd.concat((empty_data, python_data, cpp_data, rust_data)))
         chart_box.overlay(show="next+").image(plot3, image_type="png")
