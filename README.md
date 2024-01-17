@@ -1,6 +1,11 @@
 # Talks
 This repository contains the source code and slides for some of my public talks.
 
+## 2024
+- **Rust governance**
+  - Presented at [Rust Prague meetup](https://www.meetup.com/rust-prague/events/298005196/) (January 2024).
+  - [Slides](2024/rust-prague/rust-governance/slides.pdf)
+
 ## 2023
 - **What can Rust offer you?**
   - Presented at [TechMeetup](https://techmeetup.cz) 2023.

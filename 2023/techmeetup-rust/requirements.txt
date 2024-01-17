@@ -1,4 +1,4 @@
-elsie[cairo]==3.3
+elsie @ git+https://github.com/spirali/elsie@938146cfcf99c8c44dfe661c0f032a436eafa760
 tqdm==4.64.1
 pypdf2==1.26.0
 segno==1.5.2
