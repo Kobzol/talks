@@ -1,0 +1,3 @@
+elsie @ git+https://github.com/spirali/elsie@938146cfcf99c8c44dfe661c0f032a436eafa760
+pypdf2==1.26.0
+segno==1.5.2
