@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="73.633888mm"
+   height="65.927773mm"
+   viewBox="0 0 73.633888 65.927773"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
+   sodipodi:docname="chart-icon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.3826038"
+     inkscape:cx="72.3273"
+     inkscape:cy="147.54769"
+     inkscape:window-width="1920"
+     inkscape:window-height="1015"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showgrid="false" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-25.766729,-61.804325)">
+    <rect
+       style="fill:#ff204e;fill-opacity:1;stroke:#000000;stroke-width:2.11667;stroke-linejoin:round;stroke-miterlimit:1.41421;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1"
+       width="22.18157"
+       height="40.939785"
+       x="26.825062"
+       y="85.733978" />
+    <rect
+       style="fill:#5356ff;fill-opacity:1;stroke:#000000;stroke-width:2.11667;stroke-linejoin:round;stroke-miterlimit:1.41421;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1-5"
+       width="22.18157"
+       height="25.831964"
+       x="76.160713"
+       y="100.8418" />
+    <rect
+       style="fill:#4ccd99;fill-opacity:1;stroke:#000000;stroke-width:2.11667;stroke-linejoin:round;stroke-miterlimit:1.41421;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1-5-2"
+       width="22.18157"
+       height="63.811104"
+       x="51.492889"
+       y="62.862659" />
+  </g>
+</svg>

@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="143.71283mm"
+   height="119.79964mm"
+   viewBox="0 0 143.71283 119.79966"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
+   sodipodi:docname="survey-why-you-use-rust-at-work.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.5911986"
+     inkscape:cx="280.60608"
+     inkscape:cy="293.80368"
+     inkscape:window-width="2560"
+     inkscape:window-height="1529"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="198.09048"
+       y="548.86401"
+       width="210.23566"
+       height="92.25193"
+       id="rect12" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath46">
+      <path
+         d="M 11.156,134.062 H 435.094 V 497.437 H 11.156 Z"
+         id="path46" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath48">
+      <path
+         d="M 11.156,134.062 H 435.094 V 497.437 H 11.156 Z"
+         id="path48" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath50">
+      <path
+         d="M 11.156,134.062 H 435.094 V 497.437 H 11.156 Z"
+         id="path50" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath52">
+      <path
+         d="M 11.156,134.062 H 435.094 V 497.437 H 11.156 Z"
+         id="path52" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath54">
+      <path
+         d="M 11.156,134.062 H 435.094 V 497.437 H 11.156 Z"
+         id="path54" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath56">
+      <path
+         d="M 11.156,134.062 H 435.094 V 497.437 H 11.156 Z"
+         id="path56" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath58">
+      <path
+         d="M 11.156,134.062 H 435.094 V 497.437 H 11.156 Z"
+         id="path58" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath60">
+      <path
+         d="m 152,234 h 65 v 148.367 h -65 z"
+         id="path60" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath62">
+      <path
+         d="m 233,256 h 65 v 126.367 h -65 z"
+         id="path62" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath64">
+      <path
+         d="m 71,229 h 66 V 382.367 H 71 Z"
+         id="path64" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath66">
+      <path
+         d="m 313,257 h 66 v 125.367 h -66 z"
+         id="path66" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-33.07293,-88.635414)">
+    <path
+       id="path45"
+       d="M 57.184,164.344 H 392.7 V 388.426 H 57.184 Z"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       transform="matrix(0.35277776,0,0,0.35277776,27.102966,37.710912)"
+       clip-path="url(#clipPath46)" />
+    <path
+       id="path47"
+       d="M 63.238,346.746 H 386.641"
+       style="fill:none;stroke:#e5ecf6;stroke-width:0.605625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(0.35277776,0,0,0.35277776,27.102966,37.710912)"
+       clip-path="url(#clipPath48)" />
+    <path
+       id="path49"
+       d="M 63.238,311.117 H 386.641"
+       style="fill:none;stroke:#e5ecf6;stroke-width:0.605625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(0.35277776,0,0,0.35277776,27.102966,37.710912)"
+       clip-path="url(#clipPath50)" />
+    <path
+       id="path51"
+       d="M 63.238,275.492 H 386.641"
+       style="fill:none;stroke:#e5ecf6;stroke-width:0.605625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(0.35277776,0,0,0.35277776,27.102966,37.710912)"
+       clip-path="url(#clipPath52)" />
+    <path
+       id="path53"
+       d="M 63.238,239.871 H 386.641"
+       style="fill:none;stroke:#e5ecf6;stroke-width:0.605625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(0.35277776,0,0,0.35277776,27.102966,37.710912)"
+       clip-path="url(#clipPath54)" />
+    <path
+       id="path55"
+       d="M 63.238,204.242 H 386.641"
+       style="fill:none;stroke:#e5ecf6;stroke-width:0.605625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(0.35277776,0,0,0.35277776,27.102966,37.710912)"
+       clip-path="url(#clipPath56)" />
+    <path
+       id="path57"
+       d="M 63.238,382.367 H 386.641"
+       style="fill:none;stroke:#ffffff;stroke-width:1.21125;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(0.35277776,0,0,0.35277776,27.102966,37.710912)"
+       clip-path="url(#clipPath58)" />
+    <text
+       id="text76"
+       xml:space="preserve"
+       x="43.617386"
+       y="173.50005"
+       style="font-size:4.23333px;stroke-width:0.352778"><tspan
+         style="font-variant:normal;font-weight:normal;font-size:2.56381px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="43.617386 45.081322"
+         y="173.50005"
+         sodipodi:role="line"
+         id="tspan77">0%</tspan><tspan
+         style="font-variant:normal;font-weight:normal;font-size:2.56381px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="42.151154 43.615089 45.079025"
+         y="160.93233"
+         sodipodi:role="line"
+         id="tspan78">20%</tspan><tspan
+         style="font-variant:normal;font-weight:normal;font-size:2.56381px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="42.151154 43.615089 45.079025"
+         y="148.36325"
+         sodipodi:role="line"
+         id="tspan79">40%</tspan><tspan
+         style="font-variant:normal;font-weight:normal;font-size:2.56381px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="42.151154 43.615089 45.079025"
+         y="135.79692"
+         sodipodi:role="line"
+         id="tspan80">60%</tspan><tspan
+         style="font-variant:normal;font-weight:normal;font-size:2.56381px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="42.151154 43.615089 45.079025"
+         y="123.22921"
+         sodipodi:role="line"
+         id="tspan81">80%</tspan><tspan
+         style="font-variant:normal;font-weight:normal;font-size:2.56381px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="40.684921 42.148857 43.612793 45.076733"
+         y="110.66013"
+         sodipodi:role="line"
+         id="tspan82">100%</tspan></text>
+    <text
+       id="text82"
+       xml:space="preserve"
+       x="38.515873"
+       y="91.414436"
+       style="font-size:4.23333px;stroke-width:0.352778"><tspan
+         style="font-variant:normal;font-weight:700;font-size:3.63206px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="38.515873 42.024452 44.410721 45.518501 47.385384 50.715988 52.964237 55.314186 56.890503 59.276772 62.360397 63.76601 66.014259 67.12204 68.22982 70.478065 73.583488 74.691269 77.07753 80.070358 81.875496 83.451813 85.645576 87.221901 89.364822 92.927879 95.070793 97.457069 99.033379 101.78286 103.97662 105.62559 108.71284 110.3618 112.50472 114.69849 116.50362 118.75188 121.13815 123.88399 126.9894 129.37567 132.38303 134.44604 136.69429 140.0249 142.41116 144.21631 147.30356 149.70073 152.08699 153.89212 156.41278 158.60655 161.12358 164.22899 166.47725 168.12621 170.37808"
+         y="91.414436"
+         sodipodi:role="line"
+         id="tspan83">WhichofthefollowingstatementsarereasonswhyyouuseRustatwork?</tspan></text>
+    <text
+       id="text83"
+       xml:space="preserve"
+       x="38.515873"
+       y="96.136978"
+       style="font-size:4.23333px;stroke-width:0.352778"><tspan
+         style="font-variant:normal;font-weight:normal;font-size:2.90565px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="38.515873 39.373043 40.398739 42.153751 43.179447 44.794991 46.282688 47.468193 49.098267 50.484264 52.262524 54.017536 55.798706 57.1847 58.814774 60.956242 63.370838 65.029968 66.689095 68.348228 70.007355 71.471802 74.174065 75.955223 76.687454 77.713142 78.445374 80.223633 80.955856 83.3414 84.95694 86.738106 88.124107 90.381798 92.011871 93.19738 94.583374"
+         y="96.136978"
+         sodipodi:role="line"
+         id="tspan84">(totalresponses=4157,multipleanswers)</tspan></text>
+    <text
+       id="text84"
+       xml:space="preserve"
+       transform="rotate(-90)"
+       x="-157.21989"
+       y="35.361538"
+       style="font-size:4.23333px;stroke-width:0.352778"><tspan
+         style="font-variant:normal;font-weight:normal;font-size:2.99111px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="-157.21989 -155.41924 -153.74123 -152.52084 -151.09708 -149.41907 -147.58551 -145.75195 -143.94533 -142.11177 -140.2812 -138.47458 -136.68588 -135.02283 -134.26907 -132.73763 -131.51724 -129.83923 -128.41246 -126.5819 -124.77527 -122.94172 -121.51495 -119.83694 -117.63248 -116.75011 -114.28842"
+         y="35.361538"
+         sodipodi:role="line"
+         id="tspan85">Percentoutofallresponses(%)</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,33.072926,88.635417)"
+       id="text12"
+       style="font-size:24px;line-height:1.25;font-family:'AG Book Pro';-inkscape-font-specification:'AG Book Pro';white-space:pre;shape-inside:url(#rect12)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="L**2+"
+     style="display:inline">
+    <g
+       id="g1"
+       transform="translate(-33.072927,-88.635417)">
+      <path
+         id="path63"
+         d="m 71.324,229.484 h 64.68 v 152.883 h -64.68 z"
+         style="fill:#636efa;fill-opacity:1;fill-rule:nonzero;stroke:#e5ecf6;stroke-width:0.302812;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(0.35277776,0,0,0.35277776,27.102966,37.710912)"
+         clip-path="url(#clipPath64)" />
+      <text
+         id="text64"
+         xml:space="preserve"
+         x="60.065632"
+         y="117.17273"
+         style="font-size:4.23333px;stroke-width:0.352778"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:2.56381px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+           x="60.065632 61.529568 62.993504 63.675476 65.139412"
+           y="117.17273"
+           sodipodi:role="line"
+           id="tspan64">85.8%</tspan></text>
+    </g>
+    <text
+       id="text67-2"
+       xml:space="preserve"
+       transform="rotate(39.999999)"
+       x="79.903343"
+       y="49.327953"
+       style="font-size:4.23333px;stroke-width:0.352778"><tspan
+         style="font-variant:normal;font-weight:normal;font-size:3.41842px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="79.903343 80.853668 82.949158 84.849785 85.711235 86.572662 88.637398 91.293518 93.812874 95.908363 98.424324 99.631012 102.58454 104.67661 106.77209 107.63354 108.49497"
+         y="49.327953"
+         sodipodi:role="line"
+         id="tspan67-9">Itallowsustobuild</tspan><tspan
+         style="font-variant:normal;font-weight:normal;font-size:3.41842px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="79.902885 81.297592 83.215332 84.076775 85.977425 87.184128 88.045555 89.754768 91.672508 92.533943 95.142181 96.769356 98.834084 100.2288 101.62351 103.54124 105.1684 107.26389 109.16454 111.26003"
+         y="53.771618"
+         sodipodi:role="line"
+         id="tspan68-1">relativelycorrectand</tspan><tspan
+         style="font-variant:normal;font-weight:normal;font-size:3.41842px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="79.903328 81.995392 84.090881 86.849556 88.004982 89.399696 91.317429 94.120522 95.751106 97.815834 98.971268 100.17796 102.83407 104.73472 106.12943"
+         y="58.216335"
+         sodipodi:role="line"
+         id="tspan69-2">bugfreesoftware</tspan><tspan
+         style="font-variant:normal;font-weight:normal;font-size:3.41842px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="79.903343"
+         sodipodi:role="line"
+         id="tspan76-6"
+         y="63.507996" /></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="L**3+"
+     style="display:inline">
+    <g
+       id="g2"
+       transform="translate(-33.072927,-88.635417)">
+      <path
+         id="path59"
+         d="m 152.176,234.027 h 64.68 v 148.34 h -64.68 z"
+         style="fill:#636efa;fill-opacity:1;fill-rule:nonzero;stroke:#e5ecf6;stroke-width:0.302812;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(0.35277776,0,0,0.35277776,27.102966,37.710912)"
+         clip-path="url(#clipPath60)" />
+      <text
+         id="text60"
+         xml:space="preserve"
+         x="88.588272"
+         y="118.77539"
+         style="font-size:4.23333px;stroke-width:0.352778"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:2.56381px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+           x="88.588272 90.052208 91.516144 92.19812 93.662056"
+           y="118.77539"
+           sodipodi:role="line"
+           id="tspan60">83.3%</tspan></text>
+    </g>
+    <text
+       id="text67-9"
+       xml:space="preserve"
+       transform="rotate(39.999999,105.22544,-89.751272)"
+       x="162.22742"
+       y="95.955193"
+       style="font-size:4.23333px;display:inline;stroke-width:0.352778"><tspan
+         style="font-variant:normal;font-weight:normal;font-size:3.41842px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="184.07701 185.84093 187.90564 190.18915 191.05058 192.25729 194.77666 196.86873 198.78647 200.18118 201.33661 203.40134 204.79604 207.97517 209.87581 211.9713 213.59846"
+         y="77.621193"
+         sodipodi:role="line"
+         id="tspan70-7">Foritsperformance</tspan><tspan
+         style="font-variant:normal;font-weight:normal;font-size:3.41842px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="184.07657 185.08501 186.71559 188.80766 190.72539 192.64313 194.7352 196.4615 199.64062 201.55835 204.73749 206.8022 208.19691 210.80518 211.9606 214.02531 216.09004 217.29674 219.38881 220.78352 221.64497 223.74046 224.94716"
+         y="82.064857"
+         sodipodi:role="line"
+         id="tspan71-5">(speed,memoryfootprint)</tspan><tspan
+         style="font-variant:normal;font-weight:normal;font-size:3.41842px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         sodipodi:role="line"
+         id="tspan76-9"
+         x="184.07701"
+         y="87.356522" /></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="L**4+"
+     style="display:inline">
+    <g
+       id="g3"
+       transform="translate(-33.072927,-88.635417)"
+       style="display:inline">
+      <path
+         id="path61"
+         d="m 233.027,256.73 h 64.68 v 125.637 h -64.68 z"
+         style="fill:#636efa;fill-opacity:1;fill-rule:nonzero;stroke:#e5ecf6;stroke-width:0.302812;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(0.35277776,0,0,0.35277776,27.102966,37.710912)"
+         clip-path="url(#clipPath62)" />
+      <text
+         id="text62"
+         xml:space="preserve"
+         x="117.11641"
+         y="126.78454"
+         style="font-size:4.23333px;stroke-width:0.352778"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:2.56381px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+           x="117.11641 118.58035 120.04428 120.72626 122.19019"
+           y="126.78454"
+           sodipodi:role="line"
+           id="tspan62">70.5%</tspan></text>
+    </g>
+    <text
+       id="text67-29"
+       xml:space="preserve"
+       transform="rotate(39.999999,105.22544,-89.751272)"
+       x="162.26064"
+       y="95.927338"
+       style="font-size:4.23333px;stroke-width:0.352778"><tspan
+         style="font-variant:normal;font-weight:normal;font-size:3.41842px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="205.95984 206.91016 208.11685 210.63623 212.26682 214.18454 215.81171 217.9072 219.30191 220.16336 221.37006 223.9783 225.87897 227.97446 230.95187 232.58246 234.48309 235.63852 237.55627 238.76297"
+         y="59.259319"
+         sodipodi:role="line"
+         id="tspan72-5">Itssecurityandsafety</tspan><tspan
+         style="font-variant:normal;font-weight:normal;font-size:3.41842px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="205.95938 208.05145 209.44617 211.51089 213.60297 215.52069 216.91541 218.1221 218.98355 220.90128 223.42065 225.32132 226.716 229.5191 230.38055 233.55969 235.65176 237.71649 239.11121 240.3179 242.21854 244.31403"
+         y="63.70298"
+         sodipodi:role="line"
+         id="tspan73-0">propertiesareimportant</tspan><tspan
+         style="font-variant:normal;font-weight:normal;font-size:3.41842px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="205.95984 207.16653 210.12006 212.21555"
+         y="68.147697"
+         sodipodi:role="line"
+         id="tspan74-3">tous</tspan><tspan
+         style="font-variant:normal;font-weight:normal;font-size:3.41842px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         sodipodi:role="line"
+         id="tspan76-1"
+         x="205.95984"
+         y="73.439362" /></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="L**5+"
+     style="display:inline">
+    <g
+       id="g4"
+       transform="translate(-33.072927,-88.635417)">
+      <path
+         id="path65"
+         d="m 313.879,257.633 h 64.68 v 124.734 h -64.68 z"
+         style="fill:#636efa;fill-opacity:1;fill-rule:nonzero;stroke:#e5ecf6;stroke-width:0.302812;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(0.35277776,0,0,0.35277776,27.102966,37.710912)"
+         clip-path="url(#clipPath66)" />
+      <text
+         id="text66"
+         xml:space="preserve"
+         x="145.63905"
+         y="127.10287"
+         style="font-size:4.23333px;stroke-width:0.352778"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:2.56381px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+           x="145.63905 147.10298 148.56693 149.2489 150.71283"
+           y="127.10287"
+           sodipodi:role="line"
+           id="tspan66">70.0%</tspan></text>
+    </g>
+    <text
+       id="text67-6"
+       xml:space="preserve"
+       transform="rotate(39.999999,105.22544,-89.751272)"
+       x="162.37996"
+       y="96.070915"
+       style="font-size:4.23333px;stroke-width:0.352778"><tspan
+         style="font-variant:normal;font-weight:normal;font-size:3.41842px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="227.92873 231.09077 233.89729 235.05272 235.91417 238.00966 240.99049 241.85194 243.94402 245.86174 247.95723 248.81868 250.88341 252.60286 254.50351 256.59561 257.45703 260.26358 262.32828"
+         y="41.068935"
+         sodipodi:role="line"
+         id="tspan75-9">Wefinditenjoyableor</tspan><tspan
+         style="font-variant:normal;font-weight:normal;font-size:3.41842px;font-family:'Open Sans';writing-mode:lr-tb;fill:#2a3f5f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="227.9283 229.08372 231.17921 234.16347 235.37019 238.32027 240.41234 241.80705 243.87178 245.74165 247.13637 249.037 253.10493 253.96638 256.95065 259.06326 261.15875 262.78934"
+         y="45.512592"
+         sodipodi:role="line"
+         id="tspan76-3">funtoprograminRust</tspan></text>
+  </g>
+</svg>
