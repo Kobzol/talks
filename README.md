@@ -2,6 +2,9 @@
 This repository contains the source code and slides for some of my public talks.
 
 ## 2024
+- **Rust community events**
+  - Presented at [Rust Prague meetup](https://www.meetup.com/rust-prague/events/300566374/) (May 2024).
+  - [Recording](https://www.youtube.com/watch?v=HqCRoc75k_o), [slides](2024/rust-prague/rust-community-events/slides.pdf)
 - **State of Rust**
   - Presented at the [Industry Track](https://2024.rustnl.org/industry/) of the [RustNL](https://2024.rustnl.org/) conference (May 2024).
   - [Slides](2024/rustnl/state-of-rust/slides.pdf)

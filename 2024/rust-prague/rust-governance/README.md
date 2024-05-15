@@ -1,5 +1,5 @@
 # Rust Prague meetup January 2024: Rust governance
-This is a short talk about the governance model of Rust and how can you join it
+This is a talk about the governance model of Rust and how can you join it
 and contribute to the Rust Project.
 
 ```bash
