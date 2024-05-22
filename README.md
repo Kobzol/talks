@@ -8,6 +8,9 @@ This repository contains the source code and slides for some of my public talks.
 - **State of Rust**
   - Presented at the [Industry Track](https://2024.rustnl.org/industry/) of the [RustNL](https://2024.rustnl.org/) conference (May 2024).
   - [Slides](2024/rustnl/state-of-rust/slides.pdf)
+- **HyperQueue: ergonomic and efficient usage of HPC clusters**
+  - Presented at the [e-INFRA CZ](https://www.e-infra.cz/konference-e-infra-cz) conference (April 2024). 
+  - [Recording](https://youtu.be/wIxgKOAM0NE?t=9690), [slides](2024/einfra/hyperqueue/slides.pdf)
 - **Rust intro & web app demo live-coding**
   - Presented at [Rust Ostrava TechMeetup](https://www.meetup.com/techmeetupostrava/events/299912212/) (April 2024).
   - [Recording](https://youtu.be/YodMJMP2dfA?t=1438) (🇨🇿), [slides](2024/rust-ostrava/rust-intro-live-demo/slides.pdf)
