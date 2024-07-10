@@ -1,0 +1,7 @@
+git+https://github.com/spirali/elsie.git@01ba126464b7b53896a49a9771119debce111a84
+tqdm==4.64.1
+pypdf2==1.26.0
+segno==1.5.2
+pandas==1.5.3
+seaborn==0.13.0
+matplotlib==3.8.0
