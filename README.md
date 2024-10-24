@@ -4,7 +4,7 @@ This repository contains the source code and slides for some of my public talks.
 ## 2024
 - **Writing Python like it's Rust**
   - Presented at [EuroPython 2024](https://ep2024.europython.eu/session/writing-python-like-it-s-rust-more-robust-code-with-type-hints) (July 2024).
-  - [Slides](2024/europython/writing-python-like-its-rust/slides.pdf)
+  - [Recording](https://www.youtube.com/watch?v=OFRLKWacOoA), [Slides](2024/europython/writing-python-like-its-rust/slides.pdf)
 - **Rust community events**
   - Presented at [Rust Prague meetup](https://www.meetup.com/rust-prague/events/300566374/) (May 2024).
   - [Recording](https://www.youtube.com/watch?v=HqCRoc75k_o), [slides](2024/rust-prague/rust-community-events/slides.pdf)
