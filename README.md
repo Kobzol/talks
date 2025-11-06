@@ -1,6 +1,11 @@
 # Talks
 This repository contains the source code and slides for some of my public talks.
 
+## 2025
+- **How Rust does open-source**
+    - Presented at [TechMeetup](https://techmeetup.cz) 2025.
+    - [Slides](2025/techmeetup-rust/slides.pdf)
+
 ## 2024
 - **Writing Python like it's Rust**
   - Presented at [EuroPython 2024](https://ep2024.europython.eu/session/writing-python-like-it-s-rust-more-robust-code-with-type-hints) (July 2024).
