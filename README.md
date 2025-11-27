@@ -2,6 +2,9 @@
 This repository contains the source code and slides for some of my public talks.
 
 ## 2025
+- **Tips for better (Rust) tests**
+    - Presented at [Rust Prague Meetup](https://www.meetup.com/rust-prague/events/311846118/).
+    - [Slides](2025/rust-prague/tips-for-better-tests/slides.pdf)
 - **How Rust does open-source**
     - Presented at [TechMeetup](https://techmeetup.cz) 2025.
     - [Slides](2025/techmeetup-rust/slides.pdf)
