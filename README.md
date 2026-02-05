@@ -3,7 +3,7 @@ This repository contains the source code and slides for some of my public talks.
 
 ## 2026
 - **Tips for better (Rust) tests**
-  - Presented at [MeetUpdate Ostrava]() 2026.
+  - Presented at [MeetUpdate Ostrava](https://www.meetup.com/meetupdate-ostrava/events/312747904) 2026.
   - [Recording](https://www.youtube.com/watch?v=hq3TzJZ8Nks) (🇨🇿), [slides](2026/meetupdate/tips-for-better-tests/slides.pdf)
 
 ## 2025
