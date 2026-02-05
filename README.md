@@ -1,10 +1,15 @@
 # Talks
 This repository contains the source code and slides for some of my public talks.
 
+## 2026
+- **Tips for better (Rust) tests**
+  - Presented at [MeetUpdate Ostrava]() 2026.
+  - [Recording](https://www.youtube.com/watch?v=hq3TzJZ8Nks) (🇨🇿), [slides](2026/meetupdate/tips-for-better-tests/slides.pdf)
+
 ## 2025
 - **Tips for better (Rust) tests**
     - Presented at [Rust Prague Meetup](https://www.meetup.com/rust-prague/events/311846118/).
-    - [Recording](https://www.youtube.com/watch?v=hq3TzJZ8Nks) (🇨🇿), [slides](2025/rust-prague/tips-for-better-tests/slides.pdf)
+    - [Slides](2025/rust-prague/tips-for-better-tests/slides.pdf)
 - **How Rust does open-source**
     - Presented at [TechMeetup](https://techmeetup.cz) 2025.
     - [Slides](2025/techmeetup-rust/slides.pdf)
