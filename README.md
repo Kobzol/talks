@@ -12,7 +12,7 @@ This repository contains the source code and slides for some of my public talks.
     - [Slides](2025/rust-prague/tips-for-better-tests/slides.pdf)
 - **How Rust does open-source**
     - Presented at [TechMeetup](https://techmeetup.cz) 2025.
-    - [Slides](2025/techmeetup-rust/slides.pdf)
+    - [Recording](https://www.youtube.com/watch?v=lP7Hwx8mMY0) (🇨🇿), [slides](2025/techmeetup-rust/slides.pdf)
 - **Day in the life of a Rust programmer**
     - Presented at [MeetUpdate Ostrava](https://www.meetup.com/meetupdate-ostrava/events/310812343/) 2025.
     - [Recording](https://www.youtube.com/watch?v=KzcFgDEh1HM) (🇨🇿)
