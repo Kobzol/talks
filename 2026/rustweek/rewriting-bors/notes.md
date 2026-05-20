@@ -1,0 +1,6 @@
+- local vs remote git operations
+  - unable to push a commit from repo A to repo B through the GitHub API
+- show how bors works (commands, etc.)
+  - legacy of the original bors account
+  - commits with crates.io changes
+  - no wait, that was my GH activity

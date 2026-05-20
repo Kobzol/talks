@@ -2,6 +2,9 @@
 This repository contains the source code and slides for some of my public talks.
 
 ## 2026
+- **Rewriting bors: how hard can it be?**
+  - Presented at [RustWeek](https://2026.rustweek.org/talks/jakub) 2026.
+  - [Slides](2026/rustweek/rewriting-bors/slides.pdf)
 - **Tips for better (Python) tests**
   - Presented at [Ostrava Python Pizza](https://ostrava.python.pizza/) 2026.
   - [Recording](https://youtu.be/5AFVEZ9TZUs?t=5967), [slides](2026/ostrava-python-pizza/tips-for-better-tests/slides.pdf)

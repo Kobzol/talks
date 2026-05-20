@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="142.68929mm"
+   height="41.595837mm"
+   viewBox="0 0 142.68929 41.595837"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (1:1.4.3+202512261035+0d15f75042)"
+   sodipodi:docname="chat-bubble.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.0204836"
+     inkscape:cx="303.28756"
+     inkscape:cy="162.66797"
+     inkscape:window-width="1920"
+     inkscape:window-height="1012"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-57.408643,-59.868748)">
+    <path
+       id="path1"
+       style="fill:none;stroke:#000000;stroke-width:0.529167"
+       d="M 199.83334,80.666664 C 199.83335,92.006913 168.47835,101.2 129.8,101.2 104.49484,101.2 82.324361,97.265009 70.018425,91.368185 68.691923,90.732545 56.98105,95.963813 57.705583,94.90489 l 5.426718,-7.931288 c 0.631287,-0.922642 -3.365632,-4.106638 -3.365631,-6.306938 6e-6,-11.340246 31.354989,-20.533333 70.03333,-20.533333 38.67834,-10e-7 70.03334,9.193086 70.03334,20.533333 z"
+       sodipodi:nodetypes="ssssssss" />
+  </g>
+</svg>
