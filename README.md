@@ -2,6 +2,9 @@
 This repository contains the source code and slides for some of my public talks.
 
 ## 2026
+- **How we ship the Rust toolchain**
+  - Presented at [RustMeet](https://rustmeet.eu/how-we-ship-the-rust-toolchain) 2026.
+  - [Slides](2026/rustmeet/how-we-ship-rust/slides.pdf)
 - **Rewriting bors: how hard can it be?**
   - Presented at [RustWeek](https://2026.rustweek.org/talks/jakub) 2026.
   - [Recording](https://www.youtube.com/watch?v=NhTwLwznok8), [slides](2026/rustweek/rewriting-bors/slides.pdf)
